@@ -1,4 +1,4 @@
-# data-structures-java
+data-structures-java
 
 This is a library of common data structures that I encountered throughout my Abstract Data Types and Algorithms class that are implemented in Java.
 
