@@ -1,4 +1,4 @@
-package comp2402a5;
+package jds;
 
 import java.util.Comparator;
 import java.util.Random;
