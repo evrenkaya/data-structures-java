@@ -10,7 +10,6 @@ import java.util.Random;
 /**
  * This class implements a priority queue as a class binary heap
  * stored implicitly in an array
- * @author morin
  *
  * @param <T>
  */
