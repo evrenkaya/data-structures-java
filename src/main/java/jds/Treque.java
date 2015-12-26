@@ -3,8 +3,6 @@ package jds;
 import java.util.AbstractList;
 import java.util.List;
 
-import comp2402a2.ArrayDeque;
-
 public class Treque<T> extends AbstractList<T> {
 	
 	// Front half - x[0], ..., x[n/2 -1]
