@@ -1,4 +1,4 @@
-package comp2402a2;
+package jds;
 
 import java.util.AbstractList;
 import java.util.List;
