@@ -11,8 +11,7 @@ task debug << {
     println System.properties['java.home']
 }
 
-
-task myBuild(type: JavaExec) {
+task run(type: JavaExec) {
   main = 'jds.BulkArrayDeque'
-  classpath = runtimeClasspath
+  classpath = sourceSets.main.runtimeClasspath
 }
