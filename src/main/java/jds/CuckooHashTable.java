@@ -1,4 +1,4 @@
-package comp2402a4;
+package jds;
 
 import java.util.Iterator;
 import java.util.Random;

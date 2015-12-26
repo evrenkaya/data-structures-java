@@ -1,4 +1,4 @@
-package comp2402a3;
+package jds;
 
 /**
  * An implementation of the Deque interface as a doubly-linked circular list 

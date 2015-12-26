@@ -1,4 +1,4 @@
-package comp2402a4;
+package jds;
 
 public interface USet<T> extends Iterable<T> {
 	public int size();

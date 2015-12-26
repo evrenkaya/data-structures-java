@@ -1,4 +1,4 @@
-package comp2402a3;
+package jds;
 
 import java.util.AbstractSequentialList;
 import java.util.ListIterator;
