@@ -30,7 +30,7 @@ public class SEList<T> extends AbstractSequentialList<T> {
 	protected class BDeque extends ArrayDeque<T> {
 		public BDeque() {
 			super(SEList.this.f.type());
-			a = f.newArray(b+1);
+			backingArray = f.newArray(b+1);
 		}
 		protected void resize() { }
 	}
