@@ -7,10 +7,7 @@ import java.util.ListIterator;
  * An implementation of the List interface as a doubly-linked circular list 
  * of blocks of size b
  * 
- * @author morin
- * 
- * @param <T>
- *            the type of elements stored in the list
+ * @param <T> the type of elements stored in the list
  */
 public class SEList<T> extends AbstractSequentialList<T> {
 	Factory<T> f;

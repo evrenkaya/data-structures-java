@@ -6,11 +6,8 @@ import java.util.ListIterator;
 /**
  * An implementation of the List interface as a doubly-linked circular list. A
  * dummy node is used to simplify the code.
- * 
- * @author morin
- * 
- * @param <T>
- *            the type of elements stored in the list
+ *
+ * @param <T> the type of elements stored in the list
  */
 public class DLList<T> extends AbstractSequentialList<T> {
 	class Node {

@@ -5,8 +5,7 @@ package comp2402a3;
  * An implementation of the List interface as a doubly-linked circular list. A
  * dummy node is used to simplify the code. This version has a reverse method.
  * 
- * @param <T>
- *            the type of elements stored in the list
+ * @param <T> the type of elements stored in the list
  */
 public class DLListReversible<T> extends DLList<T> {
 	
