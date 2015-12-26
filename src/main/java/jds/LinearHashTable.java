@@ -7,9 +7,8 @@ import java.util.Set;
 
 /**
  * An implementation of linear probing.  The hash method used is tabulation hashing.
- * @author morin
  *
- * @param <T>
+ * @param <T> the type of elements stored in the table
  */
 public class LinearHashTable<T> implements USet<T> {
 

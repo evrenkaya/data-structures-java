@@ -9,7 +9,7 @@ import java.util.Random;
  * See: Rasmus Pagh, Flemming Friche Rodler, Cuckoo Hashing, Algorithms - ESA 2001, 
  * Lecture Notes in Computer Science 2161, Springer 2001, ISBN 3-540-42493-8
  *
- * @param <T>
+ * @param <T> the type of elements stored in the table
  */
 public class CuckooHashTable<T> implements USet<T> {
 	
