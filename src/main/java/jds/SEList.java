@@ -63,8 +63,7 @@ public class SEList<T> extends AbstractSequentialList<T> {
 	/**
 	 * Add a new node before w
 	 * 
-	 * @param w
-	 *            the node to insert the new node before
+	 * @param w the node to insert the new node before
 	 * @return the newly created and inserted node
 	 */
 	protected Node addBefore(Node w) {
@@ -80,8 +79,7 @@ public class SEList<T> extends AbstractSequentialList<T> {
 	/**
 	 * Add a new node after w
 	 * 
-	 * @param w
-	 *            the node to insert the new node after
+	 * @param w the node to insert the new node after
 	 * @return the newly created and inserted node
 	 */
 	protected Node addAfter(Node w) {
@@ -108,8 +106,7 @@ public class SEList<T> extends AbstractSequentialList<T> {
 	/**
 	 * Remove the node p from the list
 	 * 
-	 * @param w
-	 *            the node to remove
+	 * @param w the node to remove
 	 */
 	protected void remove(Node w) {
 		w.prev.next = w.next;
@@ -252,8 +249,7 @@ public class SEList<T> extends AbstractSequentialList<T> {
 		n++;
 		return true;
 	}
-	
-	// TODO: unfinished // not needed for A3
+
 	public ListIterator<T> listIterator(int i) {
 		return null;
 	}

@@ -6,7 +6,7 @@ import java.util.LinkedList;
 /**
  * An implementation of a Stack that also can efficiently return  
  * the minimum element in the current Stack.  Every operation -
- * push, pop, peek, and min - must run in constant time
+ * push, pop, peek, and min - runs in constant time
  *
  * @param <T> the class of objects stored in the queue
  */

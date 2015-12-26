@@ -73,26 +73,6 @@ public class LinearHashTable<T> implements USet<T> {
 		         ^ tab[3][(h>>>24)&0xff])
 		  	    >>> (w-d);
 	}
-
-	/* sample code
-	protected int idealHash(T x) {
-		return tab[x.hashCode() >>> w-d];
-	}
-	*/
-
-/*  this code is broken - repeatedly adding and removing the same element gives a big chain
-	public boolean addSlow(T x) {
-		if (2*(q+1) > t.length) resize(); // max 50% occupancy
-		int i = hash(x);
-		while (t[i] != null) {
-			if (t[i] != del && x.equals(t[i])) return false;
-			i = (i == t.length-1) ? 0 : i + 1; // increment i
-		}
-		t[i] = x;
-		n++; q++;
-		return true;
-	}
-	*/
 	
 	public boolean add(T x) {
 		if (find(x) != null) return false;

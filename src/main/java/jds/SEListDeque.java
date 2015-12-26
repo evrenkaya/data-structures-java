@@ -2,11 +2,7 @@ package jds;
 
 /**
  * An implementation of the Deque interface as a doubly-linked circular list 
- * of blocks of size b 
- * 
- * You must add code to the addFirst, addLast, removeFirst, and removeLast 
- * methods so that these operations all have constant amortized runtime
- * (independent of the block size b)
+ * of blocks of size b
  *
  * @param <T>  the type of elements stored in the list
  */

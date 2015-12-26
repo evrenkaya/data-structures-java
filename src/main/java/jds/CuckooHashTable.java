@@ -5,9 +5,6 @@ import java.util.Random;
 
 /**
  * This class implements the cuckoo hash 
- * 
- * See: Rasmus Pagh, Flemming Friche Rodler, Cuckoo Hashing, Algorithms - ESA 2001, 
- * Lecture Notes in Computer Science 2161, Springer 2001, ISBN 3-540-42493-8
  *
  * @param <T> the type of elements stored in the table
  */
@@ -63,7 +60,6 @@ public class CuckooHashTable<T> implements USet<T> {
 	protected void resize() {
 		// 3 * n accounts for the whole "Hash Table" 
 		// but there are 2 hash table arrays, so we divide by 2
-		//System.out.println("Resizing");
 		final int max = 3 * n / 2;
 		d = 1;
 		while((1 << d) < max) d++;
@@ -72,9 +68,6 @@ public class CuckooHashTable<T> implements USet<T> {
 		// Create new tables each with size 2^d
 		t1 = f.newArray(1 << d);
 		t2 = f.newArray(1 << d);
-		//System.out.println("old t1 length: " + oldT1.length);
-		//System.out.println("t1 length: " + t1.length);
-		//rehash(null);
 		
 		for(int k = 0; k < oldT1.length; k++) {
 			if(oldT1[k] != null) {
@@ -122,8 +115,7 @@ public class CuckooHashTable<T> implements USet<T> {
 		
 		int h1 = hash1(x);
 		int h2;
-		//System.out.println("x: " + x);
-		//System.out.println("h1: " + h1 + "\n");
+
 		// Store a pointer to the element that originally occupied the position
 		T originalElement = t1[h1];
 		
@@ -139,7 +131,7 @@ public class CuckooHashTable<T> implements USet<T> {
 			T currElement = originalElement;
 			
 			while(currElement != null) {
-				//System.out.println("currElement: " + currElement);
+
 				if(numEjections % 2 == 0) {
 					// Even number of ejections, so we are in t1
 					
@@ -179,8 +171,6 @@ public class CuckooHashTable<T> implements USet<T> {
 				
 				
 				if(numEjections > n) {
-					//System.out.println("Rehashing");
-					//System.out.println("currElement: " + currElement);
 					rehash(currElement);
 					break;
 				}
@@ -238,8 +228,6 @@ public class CuckooHashTable<T> implements USet<T> {
 			add(floatingElement);
 			n--;                                            
 		}
-		//System.out.println("old t1 length: " + oldTable1.length);
-		//System.out.println("t1 length: " + t1.length);
 		
 		for(int i = 0; i < oldTable1.length; i++) {
 			

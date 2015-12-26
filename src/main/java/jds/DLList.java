@@ -36,10 +36,8 @@ public class DLList<T> extends AbstractSequentialList<T> {
 	/**
 	 * Add a new node containing x before the node p
 	 * 
-	 * @param w
-	 *            the node to insert the new node before
-	 * @param x
-	 *            the value to store in the new node
+	 * @param w the node to insert the new node before
+	 * @param x the value to store in the new node
 	 * @return the newly created and inserted node
 	 */
 	protected Node addBefore(Node w, T x) {
@@ -56,8 +54,7 @@ public class DLList<T> extends AbstractSequentialList<T> {
 	/**
 	 * Remove the node p from the list
 	 * 
-	 * @param w
-	 *            the node to remove
+	 * @param w the node to remove
 	 */
 	protected void remove(Node w) {
 		w.prev.next = w.next;
@@ -68,8 +65,7 @@ public class DLList<T> extends AbstractSequentialList<T> {
 	/**
 	 * Get the i'th node in the list
 	 * 
-	 * @param i
-	 *            the index of the node to get
+	 * @param i the index of the node to get
 	 * @return the node with index i
 	 */
 	protected Node getNode(int i) {
