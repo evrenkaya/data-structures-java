@@ -273,39 +273,5 @@ public class SEList<T> extends AbstractSequentialList<T> {
 		dummy.prev = dummy;
 		n = 0;
 	}
-	
 
-
-
-
-
-
-	
-	public static void main(String[] args) {
-		int n = 51;
-		int b = 4;
-		SEList<Integer> l = new SEList<Integer>(b, Integer.class);
-		for (int i = 0; i < n; i++) {
-			l.add(i*10);
-		}
-		System.out.println(l);
-		for (int i = 0; i < n; i++) {
-			l.remove(l.size()-1);
-			System.out.println(l);
-		}
-		System.out.println(l);
-		System.exit(-1);
-		
-		System.out.println(l);
-		for (int i = 0; i < n; i++) {
-			l.set(i, i+1);
-		}
-		System.out.println();
-		System.out.println(l);
-		for (int i = 0; i < 15; i++) {
-			l.remove(l.size()-1);
-			System.out.println(l);
-		}
-
-	}
 }

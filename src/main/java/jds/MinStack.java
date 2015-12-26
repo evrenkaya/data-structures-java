@@ -50,20 +50,4 @@ public class MinStack<T extends Comparable<T>> extends SLListStack<T> {
 		return super.pop();
 	}
 
-	public static void main(String[] args){
-		
-		MinStack<Character> stack = new MinStack<>();
-		
-		String datasequence = "JKLMNFGHICDEBAA";
-		for (int i = 0; i < datasequence.length(); i++){
-			stack.push(datasequence.charAt(i));
-			System.out.println(stack + ", min = " + stack.min());
-		}
-		
-		while(stack.size() > 0) {
-			stack.pop();
-			System.out.println(stack + ", min = " + stack.min());
-		}
-	}
-
 }

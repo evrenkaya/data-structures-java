@@ -194,34 +194,4 @@ public class SEListDeque<T> extends SEList<T> {
 			currentNode = currentNode.next;
 		}
 	}
-	
-	public static void main(String[] args) {
-		int b = 4;
-		
-		SEListDeque<Integer> sedeque = new SEListDeque<Integer>(b, Integer.class);
-		
-		long start = System.currentTimeMillis();
-		for (int i = 0; i < 10; i++) {
-			sedeque.addFirst(i);
-		}
-		System.out.println(sedeque);
-
-		for (int i = 0; i < 10; i++) {
-			sedeque.addLast(i);
-		}
-		System.out.println(sedeque);
-		
-		for (int i = 0; i < 5; i++) {
-			sedeque.removeFirst();
-		}
-		System.out.println(sedeque);
-		for (int i = 0; i < 5; i++) {
-			sedeque.removeLast();
-		}
-		System.out.println(sedeque);
-		
-		long elapsed = System.currentTimeMillis() - start;
-		System.out.println("Time: " + elapsed);
-
-	}
 }

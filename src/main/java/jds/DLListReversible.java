@@ -59,20 +59,4 @@ public class DLListReversible<T> extends DLList<T> {
 		node.prev = temp;
 	}
 
-	public static void main(String[] args){
-		
-		DLList<Character> list = new DLListReversible<Character>();
-		
-		String datasequence = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-		for (int i = 0; i < datasequence.length(); i++){
-			list.add(datasequence.charAt(i));
-		}
-
-		System.out.println(list);
-		
-		((DLListReversible<Character>)list).reverse();
-
-		System.out.println(list);
-
-	}
 }
