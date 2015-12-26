@@ -1,1 +1,18 @@
 apply plugin: 'java'
+
+def jdkHome = System.getenv("JAVA_HOME")
+
+dependencies {
+    compile files("$jdkHome/lib/tools.jar")
+}
+
+task debug << {
+    println System.getenv("JAVA_HOME")
+    println System.properties['java.home']
+}
+
+
+task myBuild(type: JavaExec) {
+  main = 'jds.BulkArrayDeque'
+  classpath = runtimeClasspath
+}
